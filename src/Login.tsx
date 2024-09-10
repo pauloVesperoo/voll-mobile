@@ -9,37 +9,14 @@ export default function Login() {
   return (
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
       <Image source={Logo} alt='Logo Voll'/>
+
       <Titulo>
         Faça login em sua conta
       </Titulo>
       <Box>
-        <EntradaTexto>
-          label='Email'
-          placeholder='Insira seu endereço de e-mail'
-        </EntradaTexto>
-        <FormControl mt={3}>
-          <FormControl.Label>Email</FormControl.Label>
-          <Input 
-            placeholder='Insira seu endereço de email'
-            size='lg'
-            w='100%'
-            borderRadius='lg'
-            backgroundColor='gray.100'
-            shadow={3}
-          />
-        </FormControl>
-        <FormControl mt={3}>
-          <FormControl.Label>Senha</FormControl.Label>
-          <Input 
-            placeholder='Insira sunha senha'
-            size='lg'
-            w='100%'
-            borderRadius='lg'
-            backgroundColor='gray.100'
-            shadow={3}
-          />
-        </FormControl>
-      </Box>
+        <EntradaTexto label='Email' placeholder='Insira seu endereço de e-mail' />
+        <EntradaTexto label='Senha' placeholder='Insira sua senha' />
+    </Box>
       <Botao>
         Entrar
       </Botao>
