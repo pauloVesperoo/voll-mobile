@@ -9,7 +9,6 @@ export default function Login() {
   return (
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
       <Image source={Logo} alt='Logo Voll'/>
-
       <Titulo>
         Faça login em sua conta
       </Titulo>
