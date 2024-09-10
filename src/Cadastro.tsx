@@ -11,26 +11,17 @@ export default function Login() {
       <Image source={Logo} alt='Logo Voll'/>
 
       <Titulo>
-        Cadastro
+        Insira alguns dados básicos
       </Titulo>
       <Box>
+        <EntradaTexto label='Nome' placeholder='Digite seu nome completo' />
         <EntradaTexto label='Email' placeholder='Insira seu endereço de e-mail' />
-        <EntradaTexto label='Senha' placeholder='Insira sua senha' />
+        <EntradaTexto label='Crie uma senha' placeholder='Insira sua senha' />
+        <EntradaTexto label='Repita a senha' placeholder='Insira sua senha' />
     </Box>
       <Botao>
-        Entrar
+        Avançar
       </Botao>
-      <Link href='https://www.alura.com.br' mt={2}>
-        Esqueceu sua senha?
-      </Link>
-      <Box w='100%' flexDirection='row' justifyContent='center' mt={8}>
-        <Text>Ainda não tem cadastro?</Text>
-        <TouchableOpacity>
-          <Text color='blue.500'>
-            Faça seu cadastro!
-          </Text>
-        </TouchableOpacity>
-      </Box>
     </VStack>
   );
 }
