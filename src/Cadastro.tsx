@@ -2,21 +2,35 @@ import { VStack, Image, Text, Box, FormControl, Input, Button, Link} from 'nativ
 import { TouchableOpacity } from 'react-native';
 import Logo from './assets/Logo.png'
 import { Titulo } from './componentes/Titulo';
-import { EntradaTexto } from './componentes/EntradaTexto';
-import { Botao } from './componentes/Botao';
 
 export default function Login() {
+
+  const secoes = [
+    {
+      id: 1,
+      titulo: 'Insira alguns dados básicos',
+      entradaTexto: [
+        {
+          id:1,
+          label: 'Nome',
+          placeholder: 'Digite seu nome completo'
+        },
+        {
+          id:1,
+          label: 'Email',
+          placeholder: 'Digite seu email'
+        }
+      ]
+    }
+  ]
+
   return (
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
       <Image source={Logo} alt='Logo Voll'/>
       <Titulo>
-        Faça login em sua conta
+        Cadastro
       </Titulo>
       <Box>
-        <EntradaTexto>
-          label='Email'
-          placeholder='Insira seu endereço de e-mail'
-        </EntradaTexto>
         <FormControl mt={3}>
           <FormControl.Label>Email</FormControl.Label>
           <Input 
@@ -40,9 +54,14 @@ export default function Login() {
           />
         </FormControl>
       </Box>
-      <Botao>
+      <Button 
+        w='100%'
+        bg='blue.800'
+        mt={10}
+        borderRadius='lg'
+      >
         Entrar
-      </Botao>
+      </Button>
       <Link href='https://www.alura.com.br' mt={2}>
         Esqueceu sua senha?
       </Link>
