@@ -11,7 +11,17 @@ const secoes = [
         {
           id: 2,
           label: 'Email',
-          placeholder: 'Digite seu email'
+          placeholder: 'Insira seu email'
+        },
+        {
+          id: 3,
+          label: 'Crie uma senha',
+          placeholder: 'Insira sua senha'
+        },
+        {
+          id: 4,
+          label: 'Repita a senha',
+          placeholder: 'Insira sua senha'
         },
       ],
       checkbox: []
@@ -24,7 +34,27 @@ const secoes = [
           id: 1,
           label: 'CEP',
           placeholder: 'Digite seu CEP'
-        }
+        },
+        {
+          id: 2,
+          label: 'Endereço',
+          placeholder: 'Digite seu endereço'
+        },
+        {
+          id: 3,
+          label: 'Número',
+          placeholder: 'Digite seu número'
+        },
+        {
+          id: 4,
+          label: 'Complemento',
+          placeholder: 'Digite seu complemento'
+        },
+        {
+          id: 5,
+          label: 'Telefone',
+          placeholder: '(00)00000-0000'
+        },
       ],
       checkbox: []
     },
@@ -40,6 +70,30 @@ const secoes = [
         {
           id: 2,
           value: 'Unimed'
+        },
+        {
+          id: 3,
+          value: 'Bradesco'
+        },
+        {
+          id: 4,
+          value: 'Amil'
+        },
+        {
+          id: 5,
+          value: 'Biosaúde'
+        },
+        {
+          id: 6,
+          value: 'Biovida'
+        },
+        {
+          id: 7,
+          value: 'Outros'
+        },
+        {
+          id: 8,
+          value: 'Não tenho plano'
         },
       ]
     }
